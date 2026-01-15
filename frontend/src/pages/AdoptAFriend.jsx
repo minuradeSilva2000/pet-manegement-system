@@ -90,7 +90,7 @@ const AdoptAFriend = () => {
               className="bg-white text-rose-600 font-semibold py-2 px-6 rounded-xl shadow-md hover:bg-rose-100 transition-all duration-300 flex items-center gap-2"
             >
               <Heart className="h-5 w-5" />
-              My Adoptions
+              My Adoptions Profile
             </button>
           </div>
           <p className="text-center md:text-left text-pink-100 max-w-2xl">
