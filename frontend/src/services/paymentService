@@ -1,0 +1,67 @@
+// frontend/src/services/paymentService.js
+import axios from "axios";
+
+const API_BASE_URL = "http://localhost:5000/api/payments";
+
+// Create Payment
+const createPayment = async (paymentData) => {
+  try {
+    const response = await axios.post(API_BASE_URL, paymentData);
+    return response.data;
+  } catch (error) {
+    console.error("Error creating payment:", error);
+    throw error;
+  }
+};
+
+// Get All Payments
+const getAllPayments = async () => {
+  try {
+    const response = await axios.get(API_BASE_URL);
+    return response.data;
+  } catch (error) {
+    console.error("Error fetching payments:", error);
+    throw error;
+  }
+};
+
+// Get Payment by ID
+const getPaymentById = async (id) => {
+  try {
+    const response = await axios.get(`${API_BASE_URL}/${id}`);
+    return response.data;
+  } catch (error) {
+    console.error("Error fetching payment:", error);
+    throw error;
+  }
+};
+
+// Update Payment
+const updatePayment = async (id, paymentData) => {
+  try {
+    const response = await axios.put(`${API_BASE_URL}/${id}`, paymentData);
+    return response.data;
+  } catch (error) {
+    console.error("Error updating payment:", error);
+    throw error;
+  }
+};
+
+// Delete Payment
+const deletePayment = async (id) => {
+  try {
+    const response = await axios.delete(`${API_BASE_URL}/${id}`);
+    return response.data;
+  } catch (error) {
+    console.error("Error deleting payment:", error);
+    throw error;
+  }
+};
+
+export default {
+  createPayment,
+  getAllPayments,
+  getPaymentById,
+  updatePayment,
+  deletePayment,
+};

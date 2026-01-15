@@ -1,0 +1,36 @@
+{
+  "name": "pet-care-management-system",
+  "version": "1.0.0",
+  "description": "Petopia is an online pet care management system developed using the MERN stack (MongoDB, Express.js, React, Node.js). This project is part of the Year 2, Semester 2 (Y2S2) module for Information Technology Project (ITP).",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node backend/server.js"
+  },
+  "type": "module",
+  "author": "ITP25_B1_10",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "connect-mongo": "^5.1.0",
+    "cors": "^2.8.5",
+    "csv-writer": "^1.6.0",
+    "date-fns": "^4.1.0",
+    "dotenv": "^16.4.7",
+    "exceljs": "^4.4.0",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.12.1",
+    "multer": "^1.4.5-lts.2",
+    "nanoid": "^5.1.5",
+    "nodemailer": "^6.10.1",
+    "pdfkit": "^0.16.0",
+    "react-lottie": "^1.2.10",
+    "react-paginate": "^8.3.0",
+    "react-toastify": "^11.0.5",
+    "toastify": "^2.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
