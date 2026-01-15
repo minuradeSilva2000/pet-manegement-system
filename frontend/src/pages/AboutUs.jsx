@@ -14,7 +14,7 @@ const AboutUs = () => {
       />
 
       <p className="mb-4 leading-relaxed">
-        Petopia is a dedicated pet care system built as a 2nd Year, 2nd Semester ITP
+        Petopia is a dedicated pet care system built as a 3rd Year, 2nd Semester ITP
         project for our client—a renowned vet clinic in Matara. We believe every pet
         deserves top-quality care, and our platform makes it easy for vets and pet owners
         to stay connected.
